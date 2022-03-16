@@ -39,6 +39,12 @@ public interface TextGraphicsConverter {
 
     /**
      * Устанавливает символьную цветовую схему, которую будет использовать конвертер
+     */
+    default void setTextColorSchema() {
+    }
+
+    /**
+     * Устанавливает символьную цветовую схему, которую будет использовать конвертер
      * @param schema
      */
     void setTextColorSchema(TextColorSchema schema);
